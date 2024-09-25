@@ -160,4 +160,24 @@ let trueCopy = structuredClone(musicianSoft);
 console.log(trueCopy);
 });
 
+test('test112342323', async ({ page }) => {
+
+  // ПОЛИНДРОМ
+ // const reverse = (s) => s.split('').reverse().join('');
+ // split('') - разбивает строку на символы
+ // join('') - соединяет символы в строку
+ // reverse() - переворачивает строку задом на перед
+ // slice() - беред символы по идексам
+
+  const reverse = (s) => s.split('');
+  const reverse1 = (s) => s.split('').reverse();
+  const reverse2 = (s) => s.split('').reverse().join('');
+  let text = 'ana0';
+
+  console.log(reverse(text));
+  console.log(reverse1(text));
+  console.log(reverse2(text));
+  
+});
+
 
